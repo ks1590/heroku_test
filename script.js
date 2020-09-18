@@ -55,6 +55,11 @@ function getMealById(mealID) {
         )
 }
 
+// Fetch get random meal from API
+function getRandomMeal() {
+
+}
+
 // Add meal to DOM
 function addMealToDOM(meal) {
     const ingredients = [];
@@ -89,6 +94,7 @@ function addMealToDOM(meal) {
 
 //Event listeners
 submit.addEventListener('submit', searchMeal);
+submit.addEventListener('click', getRandomMeal);
 
 mealsEl.addEventListener('click', e => {
     const mealInfo = e.path.find(item => {
